@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>STAY</title>
+<style>
+body{background:#111;color:#ddd;font:16px monospace;margin:0}main{max-width:900px;margin:7vh auto;padding:25px}
+.photo{height:260px;background:repeating-linear-gradient(90deg,#171717 0 4px,#141414 4px 8px);border:1px solid #333;display:grid;place-items:center;color:#444}
+input{background:#080808;border:1px solid #555;color:#eee;padding:12px;font:inherit}button{padding:12px;font:inherit}
+</style></head><body><main>
+<h1>STAY</h1>
+<p>The screen was supposed to go dark.</p>
+<div class="photo">ARCHIVE IMAGE 04 // FILE CORRUPTED</div>
+<p>Under the image, someone wrote:</p>
+<blockquote>“I left the coordinates where the picture couldn't.”</blockquote>
+<p>Inspect the page. There is a coordinate hidden in the data.</p>
+<!-- COORDINATES: 42.3314, -83.0458 -->
+<p>Those coordinates point to a real place, but <b>do not travel there</b>. They are a story clue. Search the coordinates and look at the name of the city.</p>
+<p>Enter the city below:</p>
+<input id="x" placeholder="CITY"><button onclick="go()">ENTER</button>
+<p id="o"></p>
+<script>
+function go(){
+ let x=document.getElementById('x').value.trim().toLowerCase();
+ if(x==="detroit"){o.innerHTML="Correct. The city is only half the answer. The old machine labeled Detroit as <b>HOME</b>.<br><br>Next page: HOME.html";}
+ else o.textContent="The machine rejects that location.";
+}
+</script></main></body></html>

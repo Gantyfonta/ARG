@@ -1,0 +1,34 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>HOME</title>
+<style>
+body{background:#020405;color:#b9c4c6;font:15px monospace;margin:0}main{max-width:900px;margin:6vh auto;padding:25px}
+pre{font-size:12px;line-height:1.15;color:#718083}.terminal{border:1px solid #263336;padding:20px}
+</style></head><body><main>
+<h1>HOME</h1>
+<div class="terminal">
+<p>ARCHIVE RESTORED.</p>
+<p>SUBJECT: ELIAS VALE</p>
+<p>STATUS: MISSING</p>
+<p>LAST MESSAGE: “If I disappear, don't look for me. Look for the pattern.”</p>
+<pre>
+H E   W A S   N O T   T H E   M E S S E N G E R
+T H E   M E S S E N G E R   W A S   T H E   M A C H I N E
+</pre>
+<p>The machine has one final lock.</p>
+<p>It asks: <b>What was removed?</b></p>
+<p>Compare the first letters of the major page names you visited:</p>
+<p>MARKER → M &nbsp; ECHO → E &nbsp; STAY → S &nbsp; HOME → H</p>
+<p>Rearrange them in the order the machine actually encountered them.</p>
+<p><b>Hint:</b> The first page told you what it had forgotten.</p>
+<p>Final answer: <input id="a" style="background:#080a0b;color:white;border:1px solid #444;padding:8px" placeholder="ANSWER">
+<button onclick="finish()">UNLOCK</button></p>
+<p id="r"></p>
+</div>
+<script>
+function finish(){
+ let x=document.getElementById("a").value.trim().toLowerCase();
+ if(x==="memory"){
+  document.getElementById("r").innerHTML="<h2>TRANSMISSION COMPLETE</h2><p>The signal was never a distress call.</p><p>Elias built the machine to preserve one thing: <b>MEMORY</b>.</p><p>Every puzzle removed something from the message until only the word remained. You restored it.</p><p><i>“If you can read this, I wasn't erased. I was remembered.”</i></p>";
+ }else document.getElementById("r").textContent="ACCESS DENIED.";
+}
+</script></main></body></html>
